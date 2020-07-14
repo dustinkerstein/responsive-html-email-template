@@ -6,19 +6,25 @@
     <title>Simple Transactional Email</title>
     <style>
       /* -------------------------------------
+        INLINE WITH htmlemail.io/inline
+      ------------------------------------- */
+
+      /* -------------------------------------
           GLOBAL RESETS
       ------------------------------------- */
-      
+
       /*All the styling goes here*/
       
       img {
         border: none;
         -ms-interpolation-mode: bicubic;
         max-width: 100%; 
+        margin: auto;
+        margin-bottom: 15px;
       }
 
       body {
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         font-family: sans-serif;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
@@ -45,17 +51,17 @@
       ------------------------------------- */
 
       .body {
-        background-color: #f6f6f6;
+        background-color: #ffffff;
         width: 100%; 
       }
 
       /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
       .container {
         display: block;
-        margin: 0 auto !important;
+        /*margin: 0 auto !important;*/
         /* makes it centered */
         max-width: 580px;
-        padding: 10px;
+        /*padding: 10px;*/
         width: 580px; 
       }
 
@@ -63,9 +69,9 @@
       .content {
         box-sizing: border-box;
         display: block;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         max-width: 580px;
-        padding: 10px; 
+        /*padding: 10px; */
       }
 
       /* -------------------------------------
@@ -79,7 +85,7 @@
 
       .wrapper {
         box-sizing: border-box;
-        padding: 20px; 
+        /*padding: 20px; */
       }
 
       .content-block {
@@ -89,17 +95,20 @@
 
       .footer {
         clear: both;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
         text-align: center;
         width: 100%; 
+        padding-left: 20px;
+        padding-right: 20px;
       }
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-          color: #999999;
-          font-size: 12px;
-          text-align: center; 
+
+      .footer td,
+      .footer p,
+      .footer span,
+      .footer a {
+        color: #999999;
+        font-size: 12px;
+        text-align: center; 
       }
 
       /* -------------------------------------
@@ -248,7 +257,7 @@
       /* -------------------------------------
           RESPONSIVE AND MOBILE FRIENDLY STYLES
       ------------------------------------- */
-      @media only screen and (max-width: 620px) {
+      @media only screen and (max-width: 620px) {        
         table[class=body] h1 {
           font-size: 28px !important;
           margin-bottom: 10px !important; 
@@ -261,6 +270,7 @@
         table[class=body] a {
           font-size: 16px !important; 
         }
+
         table[class=body] .wrapper,
         table[class=body] .article {
           padding: 10px !important; 
@@ -285,8 +295,10 @@
         }
         table[class=body] .img-responsive {
           height: auto !important;
-          max-width: 100% !important;
-          width: auto !important; 
+          max-width: 50% !important;
+          width: 50% !important; 
+          margin: auto;
+          margin-bottom: 15px;
         }
       }
 
@@ -333,7 +345,7 @@
     </style>
   </head>
   <body class="">
-    <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+    <span class="preheader">Hi XYZ, I hope you don't mind me reaching out. These are strange times, so I'll keep this to the point. I'm the creator of the PanoMoments platform. We provide an interactive living photo format for the web and native iOS / Android, and also offer capture as a service using robotic motion control systems.</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
@@ -342,32 +354,19 @@
 
             <!-- START CENTERED WHITE CONTAINER -->
             <table role="presentation" class="main">
-
               <!-- START MAIN CONTENT AREA -->
               <tr>
                 <td class="wrapper">
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <p>Hi there,</p>
-                        <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td> <a href="http://htmlemail.io" target="_blank">Call To Action</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p>
+                        <p>Hi XYZ,</p>
+                        <p>I hope you don't mind me reaching out. These are strange times, so I'll keep this to the point. I'm the creator of the PanoMoments platform. We provide an interactive living photo format for the web and native iOS / Android, and also offer capture as a service using robotic motion control systems.</p>
+                        <p>From browsing [XYZ], it's clear you take product imagery seriously. Honestly, it's quite stunning. And that's why I think PanoMoments would be a great fit. Unfortunately, they can't be sent via email directly &mdash; the image below is just a GIF preview. It lacks the crucial aspect of interactivity, which is what grabs a viewers' attention, leads to increased product understanding, and ultimately, to more conversions and fewer returns.</p>
+                        <img class="img-responsive" src="https://files.panomoments.com/flyover.gif" alt="Non-Interactive Preview GIF" width="400" height="225" border="0" style="border:0; outline:none; text-decoration:none; display:block;">
+                         <p>Take a look at <a href="https://www.panomoments.com">PanoMoments.com</a> to view the real deal, and ideally check out the <a href="https://app.panomoments.com/CHMVuvmLX7">native app</a> for the ultimate viewing experience (instant downloads and buttery smooth rendering).</p>
+                         <p>It'd be great to get your feedback and discuss possible ways we could work together. Do you think you'd be interested in chatting sometime this week or next?</p>
+                         <p>Cheers,<br/>Dustin<br/>617.686.1353</p>
                       </td>
                     </tr>
                   </table>
@@ -376,25 +375,6 @@
 
             <!-- END MAIN CONTENT AREA -->
             </table>
-            <!-- END CENTERED WHITE CONTAINER -->
-
-            <!-- START FOOTER -->
-            <div class="footer">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block">
-                    <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
-                    <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by">
-                    Powered by <a href="http://htmlemail.io">HTMLemail</a>.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- END FOOTER -->
 
           </div>
         </td>
